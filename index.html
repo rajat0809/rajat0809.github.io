@@ -1,252 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rajat Chandak - Full Stack Developer | Freelance Available</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: { extend: {} }
-    };
-  </script>
-</head>
-<body class="font-sans transition-colors duration-300 bg-gray-900 text-white">
-  <!-- Theme Toggle Button -->
-  <button
-    id="themeToggle"
-    class="fixed bottom-6 right-6 z-50 p-3 bg-blue-600 hover:bg-blue-700 rounded-full shadow-xl text-white w-12 h-12 flex items-center justify-center"
-    aria-label="Toggle theme"
-  >
-    <span id="themeIcon">☀️</span>
-  </button>
-
-  <!-- Navbar -->
-  <nav class="bg-gray-800 text-white p-4 sticky top-0 z-40 shadow-lg">
-    <ul class="flex space-x-6 justify-center">
-      <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
-      <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
-      <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
-      <li><a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a></li>
-      <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <section
-    id="home"
-    class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900"
-  >
-    <div class="text-center">
-      <h1 class="text-6xl font-bold mb-4">Rajat Chandak</h1>
-      <p class="text-2xl mb-8">Full Stack Developer | Senior Tech Lead</p>
-      <p class="text-xl mb-8 max-w-2xl mx-auto">
-        5+ years building scalable fintech solutions. Open for freelance (25–30 hrs/week).
-      </p>
-      <a
-        href="#contact"
-        class="bg-blue-600 px-8 py-3 rounded-lg hover:bg-blue-700 text-lg font-semibold shadow-lg transition-transform duration-200 inline-block"
-      >
-        Hire Me
-      </a>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-20 bg-gray-800">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-16">Key Skills</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">Backend</h3>
-          <ul class="space-y-2">
-            <li>• Go (Golang)</li>
-            <li>• Java / Spring Boot</li>
-            <li>• Node.js</li>
-            <li>• PostgreSQL / SQL</li>
-          </ul>
-        </div>
-        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">Frontend</h3>
-          <ul class="space-y-2">
-            <li>• Angular</li>
-            <li>• JavaScript</li>
-          </ul>
-        </div>
-        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">DevOps/Tools</h3>
-          <ul class="space-y-2">
-            <li>• Kafka / RabbitMQ</li>
-            <li>• Jenkins / GitHub Actions</li>
-            <li>• AWS / GCP</li>
-            <li>• KrakenD / ELK Stack</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-20 bg-gray-900">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-16">Featured Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">Digital Onboarding Platform</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li>• Delivered scalable fintech product integrating national switch platforms</li>
-            <li>• Implemented vault management, biometric auth for compliance</li>
-            <li>• Developed push notifications + cashback features</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">Payment Ecosystem Integration</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li>• Integrated banks, billers, loan providers with AML + CRM tools</li>
-            <li>• Automated operations: 25% manual effort reduction</li>
-            <li>• Delivered locator services + loyalty programs</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">Wallet &amp; Merchant Services</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li>• Wallet product for merchants and recharge operators</li>
-            <li>• Fixed day‑zero log4j vulnerability</li>
-            <li>• Handled currency reform + numbering plan updates</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl mb-4">Bulk Services Automation</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li>• Bulk services for salary payments + notifications</li>
-            <li>• Spring Boot, Kafka, Jenkins, KrakenD, ELK, Angular, GCP</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="py-20 bg-gray-800">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h2 class="text-4xl font-bold text-center mb-16">Professional Experience</h2>
-      <div class="space-y-8">
-        <div>
-          <h3 class="text-2xl font-bold mb-4">Senior Tech Lead (5+ Years)</h3>
-          <ul class="text-gray-300 space-y-2 max-w-2xl mx-auto">
-            <li>• Led teams, requirement gathering, coding, code reviews</li>
-            <li>• Achieved 25% manual operations reduction via automation</li>
-            <li>• End‑to‑end implementation + international on‑site training</li>
-          </ul>
-        </div>
-        <div class="bg-gray-700 p-6 rounded-lg">
-          <h3 class="text-xl font-bold mb-2">Tech Stack</h3>
-          <p class="text-gray-300">
-            Spring Boot, Go, PostgreSQL, RabbitMQ, Kafka, Jenkins, KrakenD, ELK, Angular, GCP, AWS,
-            MongoDB, Prometheus/Grafana
-          </p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-2">Education</h3>
-          <p>B.Tech ECE, The LNM Institute of Information Technology (2016–2020)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-gradient-to-r from-blue-900 to-gray-900">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-8">Let's Work Together</h2>
-      <div class="space-y-4 mb-8">
-        <p>
-          GitHub:
-          <a href="https://github.com/rajat0809" class="text-blue-400 hover:underline"
-            >github.com/rajat0809</a
-          >
-        </p>
-        <p>
-          Email:
-          <a
-            href="mailto:rajatchandak0809@gmail.com?subject=Freelance Inquiry"
-            class="text-blue-400 hover:underline"
-            >rajatchandak0809@gmail.com</a
-          >
-        </p>
-        <p>
-          Phone:
-          <a href="tel:+919529590598" class="text-blue-400 hover:underline">+91 9529590598</a>
-        </p>
-        <p>
-          LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/chandakrajat0809"
-            target="_blank"
-            class="text-blue-400 hover:underline"
-            >linkedin.com/in/chandakrajat0809</a
-          >
-        </p>
-        <p>Location: Delhi, India</p>
-      </div>
-      <a
-        href="mailto:rajatchandak0809@gmail.com?subject=Freelance Inquiry"
-        class="bg-blue-600 px-8 py-3 rounded-lg hover:bg-blue-700 inline-block shadow-lg"
-      >
-        Send Message
-      </a>
-    </div>
-  </section>
-
-  <!-- Scripts -->
-  <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajat Chandak - Full Stack Developer & Tech Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .skill-row {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 1rem;
+            align-items: baseline;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-      });
-    });
+        .skill-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .light-theme .skill-row {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .status-badge {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            animation: pulse 3s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .hero-name {
+            background: linear-gradient(to right, #60a5fa, #06b6d4, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2 !important;
+            padding-bottom: 0.2rem;
+            display: inline-block;
+        }
 
-    // Theme toggle
-    const html = document.documentElement;
-    const body = document.body;
-    const toggleBtn = document.getElementById('themeToggle');
-    const icon = document.getElementById('themeIcon');
+        .section-title {
+            text-align: center !important;
+        }
 
-    // Initialize theme from localStorage or system preference
-    function setTheme(theme) {
-      if (theme === 'light') {
-        html.classList.remove('dark');
-        body.classList.remove('bg-gray-900', 'text-white');
-        body.classList.add('bg-white', 'text-gray-900');
-        icon.textContent = '🌙';
-      } else {
-        html.classList.add('dark');
-        body.classList.remove('bg-white', 'text-gray-900');
-        body.classList.add('bg-gray-900', 'text-white');
-        icon.textContent = '☀️';
-      }
-    }
+        .hire-btn, .consult-btn {
+            position: relative;
+            transition: all 0.3s ease-out;
+            transform: translateY(0);
+        }
+        .hire-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+        .hire-btn:active {
+            transform: translateY(-2px);
+        }
+        .consult-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+        }
+        .consult-btn:active {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body id="mainBody" class="font-sans transition-all duration-500 bg-gray-900 text-white">
 
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      setTheme('light');
-    } else {
-      setTheme('dark');
-    }
+    <!-- Theme Toggle -->
+    <button id="themeToggle" 
+            class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full shadow-2xl flex items-center justify-center text-3xl transition-transform duration-300 hover:scale-110 active:scale-95 border-4 border-white/20"
+            aria-label="Toggle Theme">
+        <span id="themeIcon">☀️</span>
+    </button>
 
-    toggleBtn.addEventListener('click', () => {
-      const current = html.classList.contains('dark') ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      setTheme(next);
-      localStorage.setItem('theme', next);
-    });
-  </script>
+    <!-- Navigation -->
+    <nav id="mainNav" class="p-4 sticky top-0 z-40 shadow-xl backdrop-blur-md transition-all duration-500 bg-gray-800/95 border-b border-gray-700">
+        <ul class="flex space-x-4 md:space-x-8 justify-center flex-wrap">
+            <li><a href="#home" class="nav-link px-3 py-2 rounded-lg transition-colors hover:text-blue-400 font-medium">Home</a></li>
+            <li><a href="#skills" class="nav-link px-3 py-2 rounded-lg transition-colors hover:text-blue-400 font-medium">Skills</a></li>
+            <li><a href="#experience" class="nav-link px-3 py-2 rounded-lg transition-colors hover:text-blue-400 font-medium">Experience</a></li>
+            <li><a href="#contact" class="nav-link px-3 py-2 rounded-lg transition-colors hover:text-blue-400 font-medium">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-gray-900 to-black px-6 pt-20">
+        
+        <div class="flex flex-col items-center text-center max-w-4xl w-full">
+            
+            <!-- Badge -->
+            <div class="inline-flex flex-wrap justify-center items-center gap-2 mb-8 px-4 py-2 bg-blue-500/10 border-2 border-blue-500/30 rounded-2xl backdrop-blur-xl">
+                <span class="status-badge text-xs font-bold px-3 py-1 rounded-full text-white shadow-lg whitespace-nowrap">OPEN FOR WORK</span>
+                <span class="text-blue-200 text-sm font-semibold">Full-Time • Contractual • Tech Consulting</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-black mb-6 hero-name drop-shadow-2xl tracking-tight">Rajat Chandak</h1>
+            
+            <p class="text-2xl md:text-3xl font-bold mb-6 text-gray-100">Senior Full Stack Developer & Consultant</p>
+            
+            <p class="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed text-gray-300">
+                5+ years architecting scalable fintech solutions with leadership roles. Expert in <strong>Java, Go, Angular & Cloud Architecture</strong>.
+                <br>Available for <strong class="text-blue-400">Senior Engineering roles</strong> or <strong class="text-emerald-400">Expert Tech Consulting</strong>.
+            </p>
+            
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-6 w-full">
+                <a href="#contact" class="hire-btn inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-10 py-5 rounded-2xl text-xl font-bold border-2 border-blue-400/30">
+                    🚀 Hire Me (Full-Time)
+                </a>
+                <a href="#contact" class="consult-btn inline-block bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white px-10 py-5 rounded-2xl text-xl font-bold border-2 border-emerald-400/30">
+                    💼 Consulting/Contractual
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Skills -->
+    <section id="skills" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 id="skillsTitle" class="text-4xl md:text-5xl font-black section-title mb-16 text-white">Key Skills</h2>
+            <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="skill-card p-8 rounded-2xl shadow-xl border bg-gray-800 border-gray-700 text-center">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400 border-b border-gray-600 pb-2 section-title mx-auto">Backend & Architecture</h3>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Languages</div>
+                        <div class="skill-content text-gray-200">Java, Go (Golang), Node.js</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Frameworks</div>
+                        <div class="skill-content text-gray-200">Spring Boot, Struts, Spring MVC</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Data & SQL</div>
+                        <div class="skill-content text-gray-200">PostgreSQL, Oracle SQL, MongoDB, CouchDB</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Messaging</div>
+                        <div class="skill-content text-gray-200">Apache Kafka, RabbitMQ</div>
+                    </div>
+                </div>
+                <div class="skill-card p-8 rounded-2xl shadow-xl border bg-gray-800 border-gray-700 text-center">
+                    <h3 class="text-2xl font-bold mb-6 text-green-400 border-b border-gray-600 pb-2 section-title mx-auto">Frontend, Cloud & DevOps</h3>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Frontend</div>
+                        <div class="skill-content text-gray-200">Angular, JavaScript</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Gateway</div>
+                        <div class="skill-content text-gray-200">KrakenD (API Gateway)</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">DevOps/Cloud</div>
+                        <div class="skill-content text-gray-200">Docker, Kubernetes, AWS, GCP, Jenkins</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-label text-gray-400 text-right">Observability</div>
+                        <div class="skill-content text-gray-200">ELK Stack, Prometheus, Grafana</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 id="experienceTitle" class="text-4xl md:text-5xl font-black section-title mb-16 text-white">Professional Experience</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                
+                <div class="experience-card p-8 rounded-2xl shadow-xl border bg-gray-900 border-gray-700 text-center">
+                    <h3 class="text-xl font-bold mb-3 text-blue-300 section-title">Digital Customer Onboarding</h3>
+                    <div class="mb-4 flex flex-wrap gap-1.5 tech-stack-container justify-center">
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">RabbitMQ</span>
+                        <span class="tech-badge">GCP</span>
+                        <span class="tech-badge">KrakenD</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside marker:text-blue-500 leading-relaxed text-sm text-left max-w-md mx-auto">
+                        <li>Architected highly scalable fintech platform for digital onboarding & money transfers</li>
+                        <li>Integrated national switch platform & mobile clearing systems</li>
+                        <li>Implemented vault management & biometric authentication for compliance</li>
+                        <li>Led security automation & manual effort reduction initiatives for card based transactions</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card p-8 rounded-2xl shadow-xl border bg-gray-900 border-gray-700 text-center">
+                    <h3 class="text-xl font-bold mb-3 text-blue-300 section-title">Payment Ecosystem Integration</h3>
+                    <div class="mb-4 flex flex-wrap gap-1.5 tech-stack-container justify-center">
+                        <span class="tech-badge">Mule</span>
+                        <span class="tech-badge">Kafka</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Prometheus</span>
+                        <span class="tech-badge">AWS</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside marker:text-blue-500 leading-relaxed text-sm text-left max-w-md mx-auto">
+                        <li>Integrated diverse ecosystem with banks, billers, loan providers as per compliance</li>
+                        <li>Implemented AML, CRM tools, push notifications and loyalty programs</li>
+                        <li>25% operational efficiency gain via automation</li>
+                        <li>End-to-end delivery with on-site client for feature training</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card p-8 rounded-2xl shadow-xl border bg-gray-900 border-gray-700 text-center">
+                    <h3 class="text-xl font-bold mb-3 text-blue-300 section-title">Wallet & Merchant Services</h3>
+                    <div class="mb-4 flex flex-wrap gap-1.5 tech-stack-container justify-center">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Struts</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">JMeter</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside marker:text-blue-500 leading-relaxed text-sm text-left max-w-md mx-auto">
+                        <li>Developed wallet payment services for multiple merchants/recharge operators</li>
+                        <li>Remediated critical day zero Log4j vulnerability</li>
+                        <li>Executed complex currency reform for Sierra Leone in July 2022 </li>
+						<li>Implemented numbering plan migrations for Côte d'Ivoire in January 2021, from 8 to 10 digits</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card p-8 rounded-2xl shadow-xl border bg-gray-900 border-gray-700 text-center">
+                    <h3 class="text-xl font-bold mb-3 text-emerald-400 section-title">API Gateway & Microservices</h3>
+                    <div class="mb-4 flex flex-wrap gap-1.5 tech-stack-container justify-center">
+                        <span class="tech-badge">KrakenD</span>
+                        <span class="tech-badge">Spring Cloud</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">ELK Stack</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-300 list-disc list-inside marker:text-emerald-500 leading-relaxed text-sm text-left max-w-md mx-auto">
+                        <li>Designed high-performance API Gateway strategies</li>
+                        <li>Microservices orchestration & distributed tracing</li>
+                        <li>Containerization (Docker) & CI/CD pipeline optimization</li>
+                        <li>Performance tuning for high-traffic payment gateways</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card p-8 rounded-2xl shadow-xl border md:col-span-2 lg:col-span-1 flex flex-col justify-center text-center">
+                    <h3 id="eduTitle" class="text-xl font-bold mb-4 text-emerald-400 border-b border-emerald-500/50 pb-3 section-title">Education</h3>
+                    <div class="text-center">
+                        <p class="text-2xl md:text-3xl font-black text-white mb-2 drop-shadow-lg" id="btechTitle">B.Tech</p>
+                        <p class="text-lg font-semibold text-emerald-100 mb-3" id="btechCollege">The LNM Institute of Information Technology, Jaipur</p>
+                        <p class="text-emerald-200 font-medium text-lg" id="btechYears">2016 – 2020</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-gradient-to-r from-blue-900 via-gray-900 to-black text-center px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-black mb-10 text-white drop-shadow-lg section-title">Let's Discuss Your Needs</h2>
+            
+            <p class="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Whether you need a <strong>Senior Tech Lead</strong> for full-time employment, 
+                a <strong>Consultant</strong> for architectural guidance, or a <strong>Freelancer</strong> for project delivery.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-blue-500/30">
+                    <h3 class="text-xl font-bold text-blue-300 mb-2 section-title">Hiring?</h3>
+                    <p class="text-gray-300">Available for Senior SDE/Lead roles.</p>
+                </div>
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-emerald-500/30">
+                    <h3 class="text-xl font-bold text-emerald-300 mb-2 section-title">Project/Consulting?</h3>
+                    <p class="text-gray-300">Open for contracts & expert consulting.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 mb-12 text-lg text-gray-200">
+                <p>📧 <a href="mailto:rajatchandak0809@gmail.com" class="text-blue-400 hover:text-blue-300 underline font-semibold">rajatchandak0809@gmail.com</a></p>
+                <p>📱 <a href="tel:+919529590598" class="text-blue-400 hover:text-blue-300 underline font-semibold">+91 9529590598</a></p>
+                
+                <div class="flex justify-center gap-8 mt-2">
+                    <a href="https://www.linkedin.com/in/chandakrajat0809" target="_blank" class="transform transition-transform hover:scale-110">
+                        <svg class="w-10 h-10 text-blue-400 hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/rajat0809" target="_blank" class="transform transition-transform hover:scale-110">
+                        <svg class="w-10 h-10 text-gray-400 hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <a href="mailto:rajatchandak0809@gmail.com?subject=Opportunity%20Discussion" 
+               class="hire-btn inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-12 py-5 rounded-2xl text-xl font-bold border-2 border-blue-400/30 mt-6">
+                📧 Contact Me At
+            </a>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const body = document.getElementById('mainBody');
+        const nav = document.getElementById('mainNav');
+        const toggle = document.getElementById('themeToggle');
+        const icon = document.getElementById('themeIcon');
+        
+        const btechTitle = document.getElementById('btechTitle');
+        const btechCollege = document.getElementById('btechCollege');
+        const btechYears = document.getElementById('btechYears');
+		const eduTitle = document.getElementById('eduTitle');
+        
+        const themes = {
+            dark: {
+                body: 'bg-gray-900 text-white',
+                nav: 'bg-gray-800/95 border-gray-700',
+                sectionMain: 'bg-gray-900',
+                sectionAlt: 'bg-gray-800',
+                card: 'bg-gray-800 border-gray-700',
+                cardAlt: 'bg-gray-900 border-gray-700',
+                textPrimary: 'text-white',
+                textSecondary: 'text-gray-300',
+                skillLabel: 'text-gray-400',
+                skillContent: 'text-gray-200',
+                btechTitle: 'text-white',
+                btechCollege: 'text-emerald-100',
+                btechYears: 'text-emerald-200',
+                badge: 'text-blue-300 bg-blue-900/40 border-blue-900/50 border rounded-full',
+				eduTitle: 'text-emerald-400'
+            },
+            light: {
+                body: 'bg-gradient-to-br from-gray-50 to-blue-50 text-gray-900',
+                nav: 'bg-white/95 border-gray-200 shadow-md',
+                sectionMain: 'bg-white',
+                sectionAlt: 'bg-gray-50',
+                card: 'bg-white border-gray-200 shadow-lg',
+                cardAlt: 'bg-gray-50 border-gray-200 shadow-lg',
+                textPrimary: 'text-gray-900',
+                textSecondary: 'text-gray-700',
+                skillLabel: 'text-gray-600',
+                skillContent: 'text-gray-800',
+                btechTitle: 'text-gray-900 drop-shadow-md',
+                btechCollege: 'text-emerald-800',
+                btechYears: 'text-emerald-700 font-semibold',
+                badge: 'text-blue-800 bg-blue-100 border-blue-200 border font-semibold rounded-full',
+				eduTitle: 'text-emerald-600 font-bold'
+            }
+        };
+
+        function applyTheme(tName) {
+            const t = themes[tName];
+            body.className = `font-sans transition-colors duration-500 ${t.body}`;
+            nav.className = `p-4 sticky top-0 z-40 shadow-xl backdrop-blur-md transition-all duration-500 border-b ${t.nav}`;
+            icon.textContent = tName === 'dark' ? '☀️' : '🌙';
+            
+            document.getElementById('skills').className = `py-24 transition-colors duration-500 ${t.sectionMain}`;
+            document.getElementById('experience').className = `py-24 transition-colors duration-500 ${t.sectionAlt}`;
+            
+            ['skillsTitle', 'experienceTitle'].forEach(id => 
+                document.getElementById(id).className = `text-4xl md:text-5xl font-black section-title mb-16 ${t.textPrimary}`
+            );
+
+            document.querySelectorAll('.skill-card').forEach(card => {
+                card.className = `skill-card p-8 rounded-2xl shadow-xl border transition-all duration-300 ${t.card} text-center`;
+                card.querySelectorAll('.skill-label').forEach(el => el.className = `skill-label ${t.skillLabel} text-right`);
+                card.querySelectorAll('.skill-content').forEach(el => el.className = `skill-content ${t.skillContent}`);
+            });
+
+            document.querySelectorAll('.experience-card').forEach(card => {
+                card.className = `experience-card p-8 rounded-2xl shadow-xl border transition-all duration-300 ${t.cardAlt} text-center`;
+                card.querySelectorAll('ul li').forEach(li => li.className = `list-disc list-inside leading-relaxed text-sm ${t.textSecondary} text-left`);
+                
+                const badges = card.querySelectorAll('.tech-badge');
+                badges.forEach(badge => {
+                    badge.className = `tech-badge text-xs px-2 py-1 ${t.badge}`;
+                });
+            });
+
+            btechTitle.className = `text-2xl md:text-3xl font-black text-center mb-2 drop-shadow-lg ${t.btechTitle}`;
+            btechCollege.className = `text-lg font-semibold text-center mb-3 ${t.btechCollege}`;
+            btechYears.className = `text-center font-medium ${t.btechYears}`;
+            eduTitle.className = `text-xl font-bold mb-4 border-b border-emerald-500/50 pb-3 section-title ${t.eduTitle}`;
+            if(tName === 'light') body.classList.add('light-theme');
+            else body.classList.remove('light-theme');
+        }
+
+        let isDark = true;
+        applyTheme('dark');
+
+        toggle.addEventListener('click', () => {
+            isDark = !isDark;
+            applyTheme(isDark ? 'dark' : 'light');
+        });
+    </script>
 </body>
 </html>

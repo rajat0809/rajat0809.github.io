@@ -27,7 +27,7 @@ import { CommonModule } from '@angular/common';
             </div>
 
             <div class="space-y-4 mb-12 text-lg text-gray-200">
-                <p>📧 <a href="mailto:rajatchandak0809@gmail.com" class="text-blue-400 hover:text-blue-300 underline font-semibold">rajatchandak0809@gmail.com</a></p>
+                <p>📧 <a href="mailto:rajatchandak0809&#64;gmail.com" class="text-blue-400 hover:text-blue-300 underline font-semibold">rajatchandak0809&#64;gmail.com</a></p>
                 <p>📱 <a href="tel:+919529590598" class="text-blue-400 hover:text-blue-300 underline font-semibold">+91 9529590598</a></p>
                 
                 <div class="flex justify-center gap-8 mt-2">
@@ -44,7 +44,7 @@ import { CommonModule } from '@angular/common';
                 </div>
             </div>
 
-            <a href="mailto:rajatchandak0809@gmail.com?subject=Opportunity%20Discussion" 
+            <a href="mailto:rajatchandak0809&#64;gmail.com?subject=Opportunity%20Discussion" 
                class="inline-block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-12 py-5 rounded-2xl text-xl font-bold border-2 border-blue-400/30 mt-6 transition-transform hover:-translate-y-1">
                 📧 Contact Me Now
             </a>

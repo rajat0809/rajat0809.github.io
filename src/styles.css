@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+html { scroll-behavior: smooth; }
+body { @apply font-sans transition-all duration-500 bg-gray-900 text-white; }
+
+/* Custom Animations */
+.status-badge {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    animation: pulse 3s infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+/* Custom Text Gradient Fix */
+.hero-name {
+    background: linear-gradient(to right, #60a5fa, #06b6d4, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2 !important; 
+    padding-bottom: 0.2rem;
+    display: inline-block;
+}
+
+/* Theme Utilities */
+.light-theme {
+    @apply bg-gradient-to-br from-gray-50 to-blue-50 text-gray-900;
+}
+.light-theme nav {
+    @apply bg-white/95 border-gray-200 shadow-md;
+}
+
+/* Button Hover Effects */
+.hire-btn, .consult-btn {
+    position: relative;
+    transition: all 0.3s ease-out;
+    transform: translateY(0);
+}
+.hire-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+}
+.hire-btn:active {
+    transform: translateY(-2px);
+}
+.consult-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+}
+.consult-btn:active {
+    transform: translateY(-2px);
+}
